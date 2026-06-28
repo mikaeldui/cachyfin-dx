@@ -19,9 +19,11 @@ modules:
 
   - type: dnf
     repos:
+      files:
+        - https://dnf.bolinder.uk/bolinder.repo
       copr:
         - atim/starship
-        - bieszczaders/kernel-cachyos
+        # - bieszczaders/kernel-cachyos
     install:
       packages:
         - micro
